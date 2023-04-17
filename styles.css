@@ -1,0 +1,92 @@
+body {
+	background-color: #eee;
+	font-family: Arial, sans-serif;
+}
+
+.wrapper {
+	margin: 50px auto;
+	width: 500px;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 0;
+}
+
+input[type="text"] {
+	width: 70%;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	margin-right: 10px;
+}
+
+button {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: "Segoe UI",Roboto,"Arial",sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 600;
+  padding: .75rem 1.2rem;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #374151;
+}
+
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 10px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	margin-bottom: 5px;
+    margin-top: 5px;
+    width: 80%;
+}
+
+.li-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+	margin-bottom: 0;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+.trash-icon{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.trash-icon:hover{
+    color: red;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
